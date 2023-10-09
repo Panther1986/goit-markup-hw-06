@@ -44,11 +44,12 @@ ul {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+   
 }
 @media screen and (min-width: 320px){
     .container{
         width: 320px;
+        margin: 0 auto;
     }
 }
 
@@ -362,8 +363,9 @@ color: #434455;
 
 .third-section {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    
 }
+
 
 .third-section-title {
     font-size: 36px;
@@ -377,21 +379,32 @@ color: #434455;
 }
 
 .third-section-main{
-display: flex;
-    gap: 24px;
+
 }
-    
+@media screen and (min-width: 320px){
+    .job-title{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: 72px;
+    }
+}
 
 .third-section-photo {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+   
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
 }
+@media screen and (min-width: 320px){
+    .third-section-photo{
+        display: block;
+        max-width: 100%;
+    }
+}
 
 .job-title{
-padding: 32px 0;
+
 }
 
 .third-section-name {
@@ -450,7 +463,7 @@ fill: #f4f4fd;
 }
 
 .fourth-section{
-    padding: 120px 0 120px 0;
+    
 }
 
 .title-portfolio {
@@ -466,7 +479,7 @@ fill: #f4f4fd;
 }
 
 .title-portfolio-main{
-    display: flex;
+   
     gap: 24px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -474,11 +487,16 @@ fill: #f4f4fd;
 }
 
 .portfolio-list{
-    margin-bottom: 0;
-    width: calc((100% - 48px) / 3);
+  
 transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px){
+    .portfolio-list{
+        width: 288px;
+        margin: 0 auto;
+    }
 }
 
 .box{
