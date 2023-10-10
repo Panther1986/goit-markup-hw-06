@@ -40,6 +40,11 @@ ul {
         width: 320px;
     }
 }
+@media (min-width: 768px){
+    body{
+        width: 768px;
+    }
+}
 
 .container {
     width: 1158px;
@@ -52,7 +57,12 @@ ul {
         margin: 0 auto;
     }
 }
-
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
 
 .header-main{
     border-bottom: 1px solid #e7e9fc;
@@ -66,7 +76,12 @@ ul {
         height: 56px;
     }
 }
-
+@media screen and (min-width: 768px) {
+    .header-main {
+        width: 768px;
+        height: 72px;
+    }
+}
 .nav-container-general{
     padding-top: 24px;
     padding-bottom: 24px;
@@ -79,7 +94,16 @@ ul {
         
     }
 }
-
+@media screen and (min-width: 768px) {
+    .nav-container-general {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        margin-top: 24px;
+        align-items: center;
+    }
+}
 .general-container{
     
 }
@@ -97,7 +121,16 @@ ul {
     }
 }
     
-
+@media screen and (min-width: 768px) {
+    .general-container {
+        width: 768px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+}
 .nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -115,17 +148,20 @@ ul {
     height: 21px;
 }
 .nav-container-btn{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-       
+display: inline-flex;
+margin: 0;
+padding: 0;
+border: none;  
 width: 24px;
 height: 24px;
 cursor: pointer;
 fill: #2F2F37;
 }
-
+@media screen and (min-width: 768px){
+.nav-container-btn{
+    display: none;
+}
+}
 
 .nav-container-logo{
     margin-right: 76px;
@@ -145,6 +181,16 @@ fill: #2F2F37;
     .nav-container{
 display: none;
     }
+}
+@media screen and (min-width: 768px){
+.nav-container{
+    display: flex;
+    width: 261px;
+    height: 48px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 40px;
+}
 }
 .nav-conteiner-item{
 position: relative;
@@ -167,7 +213,11 @@ color: #434455;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width: 768px){
+    .nav-link{
+        padding: 24px 0 20px 0;
+    }
+}
 .current{
     color: #404bbf;
     position: relative;
@@ -211,12 +261,30 @@ color: #434455;
         display: none;
     }
 }
+@media screen and (min-width: 768px){
+    .nav-address{
+        display: inline-flex;
+        
+        width: 119px;
+        height: 40px;
+        gap: 12px;
+        margin-left: 121px;
+
+    }
+}
 .nav-container-address {
     display: flex;
     gap: 40px;
-    
 }
-
+@media screen and (min-width: 768px){
+    .nav-container-address{
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
 
 .nav-address-mail {
     text-decoration: none;
@@ -226,8 +294,15 @@ color: #434455;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
+@media screen and (min-width: 768px){
+    .nav-address-mail{
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+    }
+}
 .nav-address-mail:hover {
     color: #404bbf;
 }
@@ -244,6 +319,7 @@ color: #434455;
         top: 0;
         left: 0;
         background-color: #FFF;
+        opacity: 0;
 }
 }
 @media screen and (min-width: 320px) {
@@ -390,7 +466,43 @@ color: #434455;
     padding: 188px 0;
     margin: 0 auto;
 }
+@media screen and (min-width: 320px){
+    .first-section{
+        max-width: 320px;
+        height: 432px;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Dark-bg.jpeg);
+        padding: 72px 16px;
 
+    }
+}
+@media screen and (min-width: 320px) {
+    .first-section-main {
+        width: 288px;
+        height: 160px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .first-section-main {
+        width: 496px;
+        height: 120px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px){
+.first-section{
+    max-width: 768px;
+    height: 436px;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/Dark-bg-tablet.jpeg);
+        padding: 112px 136px 204px 136px
+}
+}
 
 .first-section-title {
     font-size: 56px;
@@ -405,15 +517,25 @@ color: #434455;
 }
 @media screen and (min-width: 320px) {
     .first-section-title{
-        width: 288px;
         height: 160px;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.12;
-            text-transform: capitalize;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.12;
+        text-transform: capitalize;
+        margin: 0 auto;
     }
 }
-
+@media screen and (min-width: 768px){
+    .first-section-title{
+        height: 120px;
+            font-size: 56px;
+            font-style: normal;
+            line-height: 1.08;
+            letter-spacing: 0.02em;
+            text-transform: none;
+            margin-bottom: 36px;
+    }
+}
 .first-section-button {
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -917,7 +1039,7 @@ color: #ffffff;
     margin-left: 16px;
     fill: #FFFFFF;
 }
-.backdrop{
+.backdrop {
 position: fixed;
 top: 0;
 left: 0;
@@ -934,8 +1056,14 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 opacity: 1;
 pointer-events: auto;
 }
-
-.modal{
+@media screen and (min-width: 320px){
+.backdrop{
+width: 288px;
+height: 623px;
+margin: 8px 16px;
+}
+}
+.modal {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -950,7 +1078,13 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
 }
+@media screen and (min-width: 320px){
+.modal{
+width: 100%;
+height: 100%;
+}
 
+}
 .btn-close{
 position: absolute;
 top: 24px;
@@ -1134,5 +1268,9 @@ margin-bottom: 16px;
     border-radius: 4px;
     font-size: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+}
+@media screen and (min-width: 320px){
+    .modal-check-btn{
+        margin: 0 auto;
+    }
 }
