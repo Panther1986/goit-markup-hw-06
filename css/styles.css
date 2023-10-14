@@ -741,11 +741,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     list-style: none;
 }
 @media screen and (min-width: 320px){
-    .second-section-main{
-    height: calc((100% - 72px) / 4);
+    .second-section-main{}
        
+
     }
-}
 @media screen and (min-width: 768px){
     .second-section-main{
         width: 736px;
@@ -764,12 +763,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
    text-align: justify;
 }
 @media screen and (min-width: 320px){
-.second-section-item{
- 
+.second-section-item:not(:last-child){
+    margin-bottom: 72px;
 }
-.second-section-item:last-child{
-    padding-bottom: 0;
-}
+
 }
 @media screen and (min-width: 768px){
     .second-section-item{
