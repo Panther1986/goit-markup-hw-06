@@ -56,7 +56,7 @@ ul {
 }
 @media screen and (min-width: 320px){
     .container{
-        width: 320px;
+        
         margin: 0 auto;
     }
 }
@@ -393,8 +393,10 @@ color: #434455;
 @media screen and (min-width: 320px) {
     .mobile-menu-conteiner {
         margin-left: 16px;
-        position: relative;
         padding-top: 72px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 320px){
@@ -418,7 +420,7 @@ color: #434455;
 }
 @media screen and (min-width: 320px){
 .mobile-menu-conteiner-list {
-        margin-bottom: 48px;
+        margin-bottom: auto;
         text-decoration: none;
         
     }
@@ -542,7 +544,7 @@ color: #434455;
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/Dark-bg.jpeg);
-        padding: 72px 16px;
+        padding: 72px 0;
 
     }
 }
@@ -631,12 +633,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 @media screen and (min-width: 320px) {
     .first-section-title{
-        height: 160px;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.12;
         text-transform: capitalize;
-        margin: 0 auto;
     }
 }
 @media screen and (min-width: 768px){
@@ -742,7 +742,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 @media screen and (min-width: 320px){
     .second-section-main{
-        width: 288px;
+    height: calc((100% - 72px) / 4);
+       
     }
 }
 @media screen and (min-width: 768px){
@@ -764,7 +765,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 @media screen and (min-width: 320px){
 .second-section-item{
-    padding-bottom: 72px;
+ 
 }
 .second-section-item:last-child{
     padding-bottom: 0;
@@ -811,15 +812,41 @@ width: calc((100% - 48px) / 2);
 @media screen and (min-width: 320px){
     .second-section-title{
         text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
     }
 }
-
+@media screen and (min-width: 1158px){
+    .second-section-title{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+    }
+}
 .second-section-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+@media screen and (min-width: 320px){
+    .second-section-text{
+        font-weight: 500;
+        line-height: 1.5;
+    }
+}
+@media screen and (min-width: 1158px){
+    .second-section-text{
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+}
+
+
 
 .third-section {
     background-color: #F4F4FD;
@@ -987,13 +1014,12 @@ fill: #f4f4fd;
 @media screen and (min-width: 320px){
 .fourth-section{
     width: 320px;
-    height: 2848px;
 }
 }
 @media screen and (min-width: 768px){
     .fourth-section{
         width: 736px;
-        height: 1700px;
+    
         padding: 96px 0;
     }
 }
@@ -1143,6 +1169,12 @@ color: #2E2F42;
     background-color: #2e2f42;
     
 }
+@media screen and (min-width: 320px){
+    .footer-info{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
 @media screen and (min-width: 768px){
     .footer-info{
         width: 768px;
@@ -1166,11 +1198,9 @@ color: #2E2F42;
 }
 @media screen and (min-width: 320px){
     .footer-main{
-        width: 320px;
-        height: 664px;
+        
         padding-top: 96px;
-        padding-left: 16px;
-        padding-right: 16px;
+    
         
     }
 }
@@ -1257,6 +1287,7 @@ color: #2E2F42;
 @media screen and (min-width: 320px){
 .footer-social{
     text-align: center;
+    padding-bottom: 72px;
 }
 }
 @media screen and (min-width: 768px){
@@ -1283,7 +1314,7 @@ border: none;
 @media screen and (min-width: 320px){
 .footer-social-list{
     justify-content: center;
-    margin-bottom: 72px;
+    
 }
 }
 @media screen and (min-width: 768px){
@@ -1329,9 +1360,10 @@ width: 453px;
 @media screen and (min-width: 320px){
     .form-footer{
         margin: 0 auto;
-        width: 288px;
-        height: 136px;
+        width: 100%;
+        height: 100%;
        text-align: center;
+       padding-bottom: 96px;
     }
 }
 @media screen and (min-width: 768px){
