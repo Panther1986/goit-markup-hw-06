@@ -56,7 +56,7 @@ ul {
     .container{
             width: 1158px;
             margin: 0 auto;
-            padding: 0 156px;
+            padding: 0 16px;
     }
 }
 .header-main{
@@ -568,7 +568,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 @media screen and (min-width: 1158px){
     .first-section{
-        max-width: 1158px;
+        max-width: 1440px;
         height: 600px;
         background-image: linear-gradient(to bottom,
                     rgba(46, 47, 66, 0.7),
